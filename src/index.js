@@ -79,10 +79,7 @@ function Menu() {
       <h2>Our menu</h2>
 
       {numPizzas > 0 ? (
-        //to avoid leaving any trace in the HTML tree, then use React Fragment, creates Optimizing reconciliation process when updaing the DOM. Because it reduces all the noice from having too manh html elements like divs... etc..
-        //Makes perfect sense when Cypress automation looping through arrays where it loops identifying eahch el or by using .eq(num)
-        //cypress is a winner here by being flexible  within needng key elements from the UI side, but not on under the hood with DOM trace.
-        // in state management, I can use <><Child /></> to [<child />] or back
+      
         <>
           <p>
             Authentic Italian cuisine 6 creative dishes to choose from. All from
@@ -109,8 +106,7 @@ function Menu() {
 }
 //  inline styling, external css, sass files, css modules, style components and tailwind css as alternatives.
 
-//function rule, must start with a capital letter and must return a mark up in a form of jsx
-/// webpack will automatically retrieve img from public modules.
+
 
 function Pizza({ pizzaObj }) {
   return (
